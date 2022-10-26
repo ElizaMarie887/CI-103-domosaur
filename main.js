@@ -50,10 +50,10 @@ featheredDino.addEventListener('click', function(){
 let switchColor = document.querySelector('#toggle');
 let row = document.querySelector('#row');
 switchColor.addEventListener('click', function(){
-    if (row.style.background === 'white'){
+    if (row.style.background === ''){
     row.style.background = 'blue'}  
     else {
-    row.style.background = 'white'}
+    row.style.background = ''}
     
 })
 
