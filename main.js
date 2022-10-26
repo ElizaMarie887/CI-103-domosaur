@@ -48,11 +48,13 @@ featheredDino.addEventListener('click', function(){
 //4 Add an event listener to the "Switch Background Color" button so that when it is clicked, we switch the background color of the row of dinosaurs to a color of your choice.
 
 let switchColor = document.querySelector('#toggle');
-
-
+let row = document.querySelector('#row');
 switchColor.addEventListener('click', function(){
-    let row = document.querySelector('#row');
-    row.style.background = 'blue'
+    if (row.style.background === 'white'){
+    row.style.background = 'blue'}  
+    else {
+    row.style.background = 'white'}
+    
 })
 
 //5 Add an event listener to the dinosaur with the id biggify that, when HOVERED, grows the image to 200 pixels wide. Note that this is a different event, and you'll likely need to do some research on what different string you'll need to pass. It's not gonna be click!
@@ -65,6 +67,7 @@ grow.addEventListener('mouseenter', function(){
 
 //Stretch Goals
 //1
+// Code in #4 from above, just altered the function
 
 //2 
 grow.addEventListener('mouseleave', function(){
